@@ -14,7 +14,7 @@ Error handling alternative for Craft CMS that uses [Ignition](https://github.com
 You can install the plugin via Composer:
 
 ```bash
-composer require  --dev webrgp/craft-ignition-core
+composer require  --dev -W webrgp/craft-ignition-core
 ```
 
 This extension will bootstrap itself automatically once installed. Now you can enjoy Ignition's beautiful error pages in your Craft CMS project.
