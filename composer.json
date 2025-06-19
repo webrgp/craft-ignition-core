@@ -1,0 +1,61 @@
+{
+  "name": "webrgp/craft-ignition-core",
+  "description": "Ignition error handling alternative for Craft CMS.",
+  "type": "yii2-extension",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Passos",
+      "homepage": "https://rodrigopassos.com"
+    }
+  ],
+  "keywords": [
+    "craft",
+    "cms",
+    "craftcms",
+    "error",
+    "error-reporting",
+    "ignition",
+    "php"
+  ],
+  "require": {
+    "php": "^8.0",
+    "spatie/ignition": "^1.15"
+  },
+  "require-dev": {
+    "craftcms/cms": "^4.3.0 || ^5.0.0",
+    "craftcms/ecs": "dev-main",
+    "craftcms/phpstan": "dev-main",
+    "craftcms/rector": "dev-main",
+    "laravel/pint": "^1.22",
+    "vlucas/phpdotenv": "^5.4.0"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "webrgp\\ignition\\": "src/"
+    }
+  },
+  "scripts": {
+    "phpstan": "phpstan --ansi --memory-limit=1G",
+    "check-cs": "ecs check --ansi",
+    "fix-cs": "ecs check --fix --ansi"
+  },
+  "config": {
+    "allow-plugins": {
+      "craftcms/plugin-installer": true,
+      "yiisoft/yii2-composer": true
+    },
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "extra": {
+    "bootstrap": "webrgp\\ignition\\Ignition"
+  },
+  "support": {
+    "issues": "https://github.com/webrgp/craft-ignition-core/issues?state=open",
+    "source": "https://github.com/webrgp/craft-ignition-core",
+    "docs": "https://github.com/webrgp/craft-ignition-core/blob/master/README.md"
+  }
+}
