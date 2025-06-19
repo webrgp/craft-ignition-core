@@ -35,7 +35,10 @@
   "autoload": {
     "psr-4": {
       "webrgp\\ignition\\": "src/"
-    }
+    },
+    "files": [
+        "src/helpers/service.php"
+    ]
   },
   "scripts": {
     "phpstan": "phpstan --ansi --memory-limit=1G",
