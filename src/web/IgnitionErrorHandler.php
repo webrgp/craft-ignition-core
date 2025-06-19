@@ -2,7 +2,7 @@
 
 namespace webrgp\ignition\web;
 
-use webrgp\ignition\Ignition;
+use webrgp\ignition\services\IgnitionRenderer;
 
 class IgnitionErrorHandler extends \craft\web\ErrorHandler
 {
@@ -16,6 +16,6 @@ class IgnitionErrorHandler extends \craft\web\ErrorHandler
 
     public function renderIgnition($exception): void
     {
-        Ignition::getInstance()->ignitionRenderer->handleException($exception);
+        service(IgnitionRenderer::class)->handleException($exception);
     }
 }
